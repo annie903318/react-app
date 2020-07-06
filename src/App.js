@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import Name from './component/Name';
 import HelloWorld from './component/HelloWorld';
 import CountBtn from './component/CountBtn';
+import Todolist from './component/Todolist';
 
 import './App.css';
 
@@ -39,6 +40,8 @@ export default class App extends Component{
           <CountBtn number={num}/>
           <button name="plus"  onClick={this.cntPlus} style={{margin:'20px'}}>+</button>
         </div>
+
+        <Todolist/>
       </div>
     )
   }
